@@ -11,7 +11,7 @@ pool:
 
 
 steps:
-- task: Maven@3
+- task: Maven@3.8.6
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -21,7 +21,7 @@ steps:
     publishJUnitResults: false
     goals: 'clean'
 
-- task: Maven@3
+- task: Maven@3.8.6
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -30,7 +30,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     goals: 'install'
-- task: Maven@3
+- task: Maven@3.8.6
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
