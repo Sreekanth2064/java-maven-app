@@ -9,6 +9,7 @@ trigger:
 pool:
   name: agent
 
+
 steps:
 - task: Maven@3
   inputs:
@@ -20,7 +21,6 @@ steps:
     publishJUnitResults: false
     goals: 'clean'
 
-step:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -30,7 +30,6 @@ step:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     goals: 'install'
-step:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
