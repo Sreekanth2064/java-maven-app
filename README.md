@@ -1,5 +1,5 @@
 # java-maven-app
-
+some changes to see in azure devops 
 
 The repository contains a simple Java application which outputs the string
 "Hello world!"
