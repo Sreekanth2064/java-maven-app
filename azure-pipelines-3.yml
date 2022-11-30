@@ -9,8 +9,6 @@ trigger:
 pool:
   name: agent
 
-mavenVersionSelection = /usr/share/maven
-
 steps:
 - task: maven@3
   inputs:
